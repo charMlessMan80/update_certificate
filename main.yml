@@ -6,3 +6,7 @@
       src: /data/installs/cert/
       dest: /etc/ssl/private/
 
+  - name: restart nginx
+    service:
+      name: nginx
+      state: restarted
