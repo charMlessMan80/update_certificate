@@ -1,0 +1,8 @@
+- hosts: [cert_touring]
+  tasks:
+
+  - name: transfert pem and key files
+    copy:
+      src: /data/installs/cert/
+      dest: /etc/ssl/private/
+
